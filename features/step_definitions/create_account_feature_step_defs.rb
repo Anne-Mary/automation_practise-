@@ -3,7 +3,7 @@ Given(/^I access the homepage$/) do
 end
 
 And(/^click sign in$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  sign_in.click_on_sign_in
 end
 
 When(/^I fill in the available field for create account$/) do
