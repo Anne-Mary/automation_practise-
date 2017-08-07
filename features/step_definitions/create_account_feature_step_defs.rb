@@ -1,5 +1,5 @@
 Given(/^I access the homepage$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  main_page.visit
 end
 
 And(/^click sign in$/) do
