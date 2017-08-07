@@ -4,6 +4,7 @@ end
 
 And(/^click sign in$/) do
   sign_in.click_on_sign_in
+  sleep 2
 end
 
 When(/^I fill in the available field for create account$/) do
