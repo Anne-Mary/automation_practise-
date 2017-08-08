@@ -10,4 +10,8 @@ module Site
 		SignIn.new(@driver)
 	end
 
+	def create_account
+		CreateAccount.new(@driver)
+	end
+
 end

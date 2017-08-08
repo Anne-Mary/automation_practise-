@@ -1,4 +1,5 @@
 require 'watir'
+require 'faker'
 require_relative 'site'
 
 World(Site)

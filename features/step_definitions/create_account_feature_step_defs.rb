@@ -8,15 +8,17 @@ And(/^click sign in$/) do
 end
 
 When(/^I fill in the available field for create account$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  sign_in.add_email
+  sleep 2
 end
 
 And(/^I click create account$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  create_account.click_on_create_account
+  sleep 2
 end
 
 And(/^I fill all the required fields$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  create_account.faker_details
 end
 
 Then(/^I have a new account$/) do
