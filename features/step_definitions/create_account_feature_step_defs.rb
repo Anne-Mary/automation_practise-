@@ -18,7 +18,7 @@ And(/^I click create account$/) do
 end
 
 And(/^I fill all the required fields$/) do
-  create_account.faker_details
+  create_account.faker_gem_details
 end
 
 Then(/^I have a new account$/) do

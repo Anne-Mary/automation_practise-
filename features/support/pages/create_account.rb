@@ -18,7 +18,7 @@ class CreateAccount
 		@driver.select_list(id: 'months').select_value('5')
 		@driver.select_list(id: 'years').select_value('1993')
 		@driver.checkbox(id: 'newsletter').set
-		@driver.checkbox(id: 'option').set
+		@driver.checkbox(id: 'optin').set
 
 
 		@driver.text_field(id: 'firstname').set(name)
@@ -39,7 +39,7 @@ class CreateAccount
 
 	end
 
-	def faker_details
+	def faker_gem_details
 		customer_firstname = Faker::Name.first_name
 		customer_lastname = Faker::Name.last_name
 		city = Faker::Address.city
